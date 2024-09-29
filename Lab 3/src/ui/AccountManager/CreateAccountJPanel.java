@@ -52,16 +52,24 @@ public class CreateAccountJPanel extends javax.swing.JPanel {
         btnCreate = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(253, 240, 213));
+
+        lblTitle.setForeground(new java.awt.Color(193, 18, 31));
         lblTitle.setText("Create Account");
 
+        lblRoutingNumber.setForeground(new java.awt.Color(193, 18, 31));
         lblRoutingNumber.setText("Routing Number");
 
+        lblAccountNumber.setForeground(new java.awt.Color(193, 18, 31));
         lblAccountNumber.setText("Account Number");
 
+        lblBankName.setForeground(new java.awt.Color(193, 18, 31));
         lblBankName.setText("Bank Name:");
 
+        lblBalance.setForeground(new java.awt.Color(193, 18, 31));
         lblBalance.setText("Balance");
 
+        btnCreate.setForeground(new java.awt.Color(193, 18, 31));
         btnCreate.setText("Create Account");
         btnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,6 +77,7 @@ public class CreateAccountJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnBack.setForeground(new java.awt.Color(193, 18, 31));
         btnBack.setText("<<< Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,7 +109,7 @@ public class CreateAccountJPanel extends javax.swing.JPanel {
                             .addComponent(txtBankName)
                             .addComponent(txtBalance)
                             .addComponent(btnCreate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(302, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -127,7 +136,7 @@ public class CreateAccountJPanel extends javax.swing.JPanel {
                     .addComponent(txtBalance, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addComponent(btnCreate)
-                .addContainerGap(268, Short.MAX_VALUE))
+                .addContainerGap(262, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

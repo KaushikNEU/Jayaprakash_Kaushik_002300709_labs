@@ -53,6 +53,7 @@ public class ViewAccountJPanel extends javax.swing.JPanel {
         btnUpdate = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
 
+        lblTitle.setBackground(new java.awt.Color(0, 48, 73));
         lblTitle.setText("View Account");
 
         lblRoutingNumber.setText("Routing Number");

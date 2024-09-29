@@ -88,6 +88,9 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="lblTitle">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="49" green="30" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="View Account"/>
       </Properties>
     </Component>

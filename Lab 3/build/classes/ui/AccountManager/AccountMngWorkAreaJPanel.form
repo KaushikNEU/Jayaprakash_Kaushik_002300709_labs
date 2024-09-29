@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="d5" green="f0" red="fd" type="rgb"/>
+    </Property>
+  </Properties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -18,9 +23,9 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="btnManageAccount" max="32767" attributes="0"/>
-                  <Component id="btnCreateAccount" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnCreateAccount" alignment="0" max="32767" attributes="0"/>
+                  <Component id="btnManageAccount" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="595" max="32767" attributes="0"/>
           </Group>
@@ -41,6 +46,9 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="btnCreateAccount">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="1f" green="12" red="c1" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Create Account"/>
       </Properties>
       <Events>
@@ -49,6 +57,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnManageAccount">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="1f" green="12" red="c1" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Manage account"/>
       </Properties>
       <Events>

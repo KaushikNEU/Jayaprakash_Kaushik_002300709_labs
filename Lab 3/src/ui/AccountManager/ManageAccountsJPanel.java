@@ -53,6 +53,7 @@ public class ManageAccountsJPanel extends javax.swing.JPanel {
 
         lblTitle.setText("Manage Acccount");
 
+        tblAccounts.setBackground(new java.awt.Color(253, 240, 213));
         tblAccounts.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -74,6 +75,7 @@ public class ManageAccountsJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblAccounts);
 
+        btnBack.setForeground(new java.awt.Color(193, 18, 31));
         btnBack.setText("<<<Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,6 +83,7 @@ public class ManageAccountsJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnSearch.setForeground(new java.awt.Color(193, 18, 31));
         btnSearch.setText("Search");
         btnSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,6 +91,7 @@ public class ManageAccountsJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnViewDetails.setForeground(new java.awt.Color(193, 18, 31));
         btnViewDetails.setText("View Details");
         btnViewDetails.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,6 +99,7 @@ public class ManageAccountsJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnDelete.setForeground(new java.awt.Color(193, 18, 31));
         btnDelete.setText("Delete Account");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
