@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package ui.admin;
 import model.SupplierDirectory;
@@ -13,20 +13,19 @@ import ui.LoginScreen;
  *
  * @author kaushikj
  */
-public class AdminWorkAreaJPanel extends javax.swing.JFrame {
+public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     JPanel mainWorkArea;
     SupplierDirectory supplierDirectory;
-    
 
     /**
-     * Creates new form AdminWorkAreaJPanel
+     * Creates new form AdminWorkArea1JPanel
      */
     public AdminWorkAreaJPanel(JPanel mainWorkArea, SupplierDirectory supplierDirectory) {
         initComponents();
         this.mainWorkArea = mainWorkArea;
         this.supplierDirectory = supplierDirectory;
         
-        lblWelcome.setText("Welcome to Lab 4!");
+        lblWelcome.setText("Welcome");
     }
 
     /**
@@ -44,8 +43,6 @@ public class AdminWorkAreaJPanel extends javax.swing.JFrame {
         btnManageSuppliers = new javax.swing.JButton();
         btnLogOut = new javax.swing.JButton();
         workArea = new javax.swing.JPanel();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
@@ -91,41 +88,46 @@ public class AdminWorkAreaJPanel extends javax.swing.JFrame {
 
         jSplitPane1.setTopComponent(menuBar);
 
-        workArea.setLayout(new java.awt.CardLayout());
+        workArea.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jSplitPane1.setRightComponent(workArea);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jSplitPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 894, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jSplitPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 567, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnManageSuppliersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageSuppliersActionPerformed
         // TODO add your handling code here:
+        ManageSuppliers panel = new ManageSuppliers(workArea, supplierDirectory);
+        workArea.add("ManageSupplierAdministrative", panel);
+        CardLayout layout = (CardLayout) workArea.getLayout();
+        layout.next(workArea);
+
     }//GEN-LAST:event_btnManageSuppliersActionPerformed
 
     private void btnLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogOutActionPerformed
         // TODO add your handling code here:
+        mainWorkArea.remove(this);
+        Component[] componentArray = mainWorkArea.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        LoginScreen loginPanel = (LoginScreen) component;
+        loginPanel.populateSupplierCombo();
+        CardLayout layout = (CardLayout) mainWorkArea.getLayout();
+        layout.previous(mainWorkArea);
     }//GEN-LAST:event_btnLogOutActionPerformed
-    
-    /**
-     * @param args the command line arguments
-     */
-    
     @Override
     public String toString(){
         return "Administrator";

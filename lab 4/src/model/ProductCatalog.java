@@ -11,7 +11,6 @@ import java.util.ArrayList;
  * @author kaushikj
  */
 public class ProductCatalog {
-    
     private ArrayList<Product> productCatalog;
     
     public ProductCatalog() {
@@ -45,4 +44,9 @@ public class ProductCatalog {
     public int getProductCount(){
         return productCatalog.size();
     }
+    
+    public ArrayList<Product> getProducts() {
+    return productCatalog;
+    }
+    
 }

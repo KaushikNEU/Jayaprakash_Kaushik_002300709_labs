@@ -134,15 +134,30 @@ public class CreateNewProductJPanel extends javax.swing.JPanel {
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         // TODO add your handling code here:
-        Product product = supplier.getProductCatalog().addProduct();
-        product.setName(txtName.getText());
-        String stringPrice = txtPrice.getText();
-        if (stringPrice.isEmpty() == false) {
-            int price = Integer.parseInt(stringPrice);
-            product.setPrice(price);
+        String productName = txtName.getText();
+    String stringPrice = txtPrice.getText();
+
+    if (productName.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Product name cannot be empty.", "Warning", JOptionPane.WARNING_MESSAGE);
+        return;
+    }
+
+    int price = 0;
+    if (!stringPrice.isEmpty()) {
+        try {
+            price = Integer.parseInt(stringPrice);
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Price must be a valid integer.", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
         }
-        JOptionPane.showMessageDialog(this, "Product successfully added", "Information", JOptionPane.INFORMATION_MESSAGE);
-        backAction();
+    }
+
+    Product product = supplier.getProductCatalog().addProduct();
+    product.setName(productName);
+    product.setPrice(price);
+
+    JOptionPane.showMessageDialog(this, "Product successfully added", "Information", JOptionPane.INFORMATION_MESSAGE);
+    backAction();
     }//GEN-LAST:event_btnAddActionPerformed
     private void backAction() {
         workArea.remove(this);

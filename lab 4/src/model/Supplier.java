@@ -11,7 +11,7 @@ import javax.swing.ImageIcon;
  * @author kaushikj
  */
 public class Supplier {
-    
+        
     private String supplyName;
     private ProductCatalog productCatalog;
     private ImageIcon logoImage;
@@ -39,11 +39,21 @@ public class Supplier {
     public ProductCatalog getProductCatalog() {
         return productCatalog;
     }
+    public Product getProductById(String productId) {
+    for (Product product : productCatalog.getProducts()) {
+        if (String.valueOf(product.getId()).equals(productId)) {
+            return product;
+        }
+    }
+    return null;
+}
+    
     
     
     @Override
     public String toString() {
         return supplyName;
     }
+    
     
 }

@@ -4,19 +4,19 @@
  */
 package ui;
 
-import model.SupplierDirectory;
 import java.awt.CardLayout;
 import model.Supplier;
+import model.SupplierDirectory;
 
 /**
  *
  * @author kaushikj
  */
 public class MainJFrame extends javax.swing.JFrame {
-    SupplierDirectory supplierDirectory;
+       SupplierDirectory supplierDirectory;
 
     /**
-     * Creates new form MainJFrame
+     * Creates new form Main1JFrame
      */
     public MainJFrame() {
         initComponents();
@@ -26,6 +26,7 @@ public class MainJFrame extends javax.swing.JFrame {
        
         
         setLoginScreen();
+        populateDemoData();
     }
 
     /**
@@ -83,6 +84,7 @@ public class MainJFrame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -92,11 +94,20 @@ public class MainJFrame extends javax.swing.JFrame {
         });
     }
 
-    private void setLoginScreen() {
-       
-    }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel mainWorkArea;
     // End of variables declaration//GEN-END:variables
+
+    private void setLoginScreen() {
+        LoginScreen ls = new LoginScreen(mainWorkArea, supplierDirectory);
+        mainWorkArea.add("LoginScreen", ls);
+        CardLayout layout = (CardLayout) mainWorkArea.getLayout();
+        layout.next(mainWorkArea);
+    }
+
+    private void populateDemoData() {
+        Supplier bestBuy = supplierDirectory.addSupplier();
+        bestBuy.setSupplyName("Best Buy");
+        
+    }
 }
