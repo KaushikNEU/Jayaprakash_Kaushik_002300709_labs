@@ -53,11 +53,15 @@ public class UpdateSupplierProfileJPanel extends javax.swing.JPanel {
         jTextArea1 = new javax.swing.JTextArea();
         btnSave = new javax.swing.JButton();
 
+        setForeground(new java.awt.Color(230, 57, 70));
+
+        lblLogo.setForeground(new java.awt.Color(230, 57, 70));
         lblLogo.setText("Logo:");
 
         imgLogo.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         imgLogo.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
+        btnAttach.setForeground(new java.awt.Color(230, 57, 70));
         btnAttach.setText("Attach");
         btnAttach.setEnabled(false);
         btnAttach.addActionListener(new java.awt.event.ActionListener() {
@@ -66,10 +70,13 @@ public class UpdateSupplierProfileJPanel extends javax.swing.JPanel {
             }
         });
 
+        lblName.setForeground(new java.awt.Color(230, 57, 70));
         lblName.setText("Name:");
 
+        lblTitle.setForeground(new java.awt.Color(230, 57, 70));
         lblTitle.setText("New Supplier Information:");
 
+        backButton.setForeground(new java.awt.Color(230, 57, 70));
         backButton.setText("<< Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,6 +84,7 @@ public class UpdateSupplierProfileJPanel extends javax.swing.JPanel {
             }
         });
 
+        lblDescription.setForeground(new java.awt.Color(230, 57, 70));
         lblDescription.setText("Description:");
 
         jTextArea1.setColumns(20);
@@ -84,6 +92,7 @@ public class UpdateSupplierProfileJPanel extends javax.swing.JPanel {
         jTextArea1.setEnabled(false);
         jScrollPane1.setViewportView(jTextArea1);
 
+        btnSave.setForeground(new java.awt.Color(230, 57, 70));
         btnSave.setText("Save");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

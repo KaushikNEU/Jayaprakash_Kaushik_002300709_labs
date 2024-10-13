@@ -57,6 +57,7 @@ public class ManageSuppliers extends javax.swing.JPanel {
         lblSupplierList = new javax.swing.JLabel();
 
         jScrollPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jScrollPane1.setForeground(new java.awt.Color(230, 57, 70));
 
         tblSuppliers.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -79,6 +80,7 @@ public class ManageSuppliers extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblSuppliers);
 
+        btnRemove.setForeground(new java.awt.Color(230, 57, 70));
         btnRemove.setText("Remove");
         btnRemove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,6 +88,7 @@ public class ManageSuppliers extends javax.swing.JPanel {
             }
         });
 
+        btnView.setForeground(new java.awt.Color(230, 57, 70));
         btnView.setText("View Supplier");
         btnView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,6 +96,7 @@ public class ManageSuppliers extends javax.swing.JPanel {
             }
         });
 
+        btnAdd.setForeground(new java.awt.Color(230, 57, 70));
         btnAdd.setText("Add Supplier");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,6 +104,7 @@ public class ManageSuppliers extends javax.swing.JPanel {
             }
         });
 
+        lblSupplierList.setForeground(new java.awt.Color(230, 57, 70));
         lblSupplierList.setText("Manage Suppliers:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

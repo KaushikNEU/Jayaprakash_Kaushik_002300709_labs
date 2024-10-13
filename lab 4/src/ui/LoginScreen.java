@@ -50,6 +50,7 @@ public class LoginScreen extends javax.swing.JPanel {
         lblSupplier = new javax.swing.JLabel();
 
         lblTitle.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblTitle.setForeground(new java.awt.Color(230, 57, 70));
         lblTitle.setText("Welcome to Lab 4 Demo");
 
         cmbRoles.addActionListener(new java.awt.event.ActionListener() {
@@ -58,9 +59,11 @@ public class LoginScreen extends javax.swing.JPanel {
             }
         });
 
+        lblRole.setForeground(new java.awt.Color(230, 57, 70));
         lblRole.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblRole.setText("Choose Role:");
 
+        btnLogin.setForeground(new java.awt.Color(230, 57, 70));
         btnLogin.setText("Login");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,6 +77,7 @@ public class LoginScreen extends javax.swing.JPanel {
             }
         });
 
+        lblSupplier.setForeground(new java.awt.Color(230, 57, 70));
         lblSupplier.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblSupplier.setText("Select Supplier:");
 

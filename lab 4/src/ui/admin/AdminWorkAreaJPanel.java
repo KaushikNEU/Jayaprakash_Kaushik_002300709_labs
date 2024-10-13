@@ -46,8 +46,10 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
+        lblWelcome.setForeground(new java.awt.Color(230, 57, 70));
         lblWelcome.setText("<WelcomeMsg>");
 
+        btnManageSuppliers.setForeground(new java.awt.Color(230, 57, 70));
         btnManageSuppliers.setText("Manage Suppliers");
         btnManageSuppliers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -55,6 +57,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnLogOut.setForeground(new java.awt.Color(230, 57, 70));
         btnLogOut.setText("Logout");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -58,16 +58,22 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
         btnAddFeature = new javax.swing.JButton();
         btnRemoveFeature = new javax.swing.JButton();
 
+        lblTitle.setForeground(new java.awt.Color(230, 57, 70));
         lblTitle.setText("View Product Details");
 
+        lblName.setForeground(new java.awt.Color(230, 57, 70));
         lblName.setText("Product Name:");
 
         txtName.setEditable(false);
+        txtName.setForeground(new java.awt.Color(230, 57, 70));
 
+        lblPrice.setForeground(new java.awt.Color(230, 57, 70));
         lblPrice.setText("Price:");
 
         txtPrice.setEditable(false);
+        txtPrice.setForeground(new java.awt.Color(230, 57, 70));
 
+        btnUpdate.setForeground(new java.awt.Color(230, 57, 70));
         btnUpdate.setText("Update Product");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,6 +81,7 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
             }
         });
 
+        backButton1.setForeground(new java.awt.Color(230, 57, 70));
         backButton1.setText("<< Back");
         backButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,9 +90,12 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
         });
 
         txtId.setEditable(false);
+        txtId.setForeground(new java.awt.Color(230, 57, 70));
 
+        lblId.setForeground(new java.awt.Color(230, 57, 70));
         lblId.setText("ID:");
 
+        btnSave.setForeground(new java.awt.Color(230, 57, 70));
         btnSave.setText("Save");
         btnSave.setEnabled(false);
         btnSave.addActionListener(new java.awt.event.ActionListener() {
@@ -94,6 +104,7 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
             }
         });
 
+        tblFeatures.setForeground(new java.awt.Color(230, 57, 70));
         tblFeatures.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
@@ -108,6 +119,7 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
         tblFeatures.setEnabled(false);
         jScrollPane1.setViewportView(tblFeatures);
 
+        btnAddFeature.setForeground(new java.awt.Color(230, 57, 70));
         btnAddFeature.setText("Add Feature");
         btnAddFeature.setEnabled(false);
         btnAddFeature.addActionListener(new java.awt.event.ActionListener() {
@@ -116,6 +128,7 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnRemoveFeature.setForeground(new java.awt.Color(230, 57, 70));
         btnRemoveFeature.setText("Remove Feature");
         btnRemoveFeature.setEnabled(false);
         btnRemoveFeature.addActionListener(new java.awt.event.ActionListener() {

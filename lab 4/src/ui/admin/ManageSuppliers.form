@@ -57,6 +57,9 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="46" green="39" red="e6" type="rgb"/>
+        </Property>
       </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
@@ -77,6 +80,9 @@
     </Container>
     <Component class="javax.swing.JButton" name="btnRemove">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="46" green="39" red="e6" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Remove"/>
       </Properties>
       <Events>
@@ -85,6 +91,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnView">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="46" green="39" red="e6" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="View Supplier"/>
       </Properties>
       <Events>
@@ -93,6 +102,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnAdd">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="46" green="39" red="e6" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Add Supplier"/>
       </Properties>
       <Events>
@@ -101,6 +113,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblSupplierList">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="46" green="39" red="e6" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Manage Suppliers:"/>
       </Properties>
     </Component>

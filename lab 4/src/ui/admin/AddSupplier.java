@@ -71,12 +71,15 @@ public class AddSupplier extends javax.swing.JPanel {
         lblName = new javax.swing.JLabel();
         btnRemove = new javax.swing.JButton();
 
+        imgLogo.setForeground(new java.awt.Color(230, 57, 70));
         imgLogo.setText("<No Image>");
         imgLogo.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         imgLogo.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
+        lblTitle.setForeground(new java.awt.Color(230, 57, 70));
         lblTitle.setText("New Supplier Information:");
 
+        btnAddSupplier.setForeground(new java.awt.Color(230, 57, 70));
         btnAddSupplier.setText("Add");
         btnAddSupplier.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,6 +87,7 @@ public class AddSupplier extends javax.swing.JPanel {
             }
         });
 
+        backButton.setForeground(new java.awt.Color(230, 57, 70));
         backButton.setText("<< Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,14 +95,17 @@ public class AddSupplier extends javax.swing.JPanel {
             }
         });
 
+        lblDescription.setForeground(new java.awt.Color(230, 57, 70));
         lblDescription.setText("Description:");
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
+        lblLogo.setForeground(new java.awt.Color(230, 57, 70));
         lblLogo.setText("Logo:");
 
+        btnAttach.setForeground(new java.awt.Color(230, 57, 70));
         btnAttach.setText("Attach");
         btnAttach.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,8 +113,10 @@ public class AddSupplier extends javax.swing.JPanel {
             }
         });
 
+        lblName.setForeground(new java.awt.Color(230, 57, 70));
         lblName.setText("Name:");
 
+        btnRemove.setForeground(new java.awt.Color(230, 57, 70));
         btnRemove.setText("Remove");
         btnRemove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

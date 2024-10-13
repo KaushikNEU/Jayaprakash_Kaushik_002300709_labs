@@ -67,8 +67,10 @@ public class ManageProductCatalogJPanel extends javax.swing.JPanel {
         btnDelete = new javax.swing.JButton();
         imgLogo = new javax.swing.JLabel();
 
+        lblTitle.setForeground(new java.awt.Color(230, 57, 70));
         lblTitle.setText("Manage Product Catalog");
 
+        tblProducts.setForeground(new java.awt.Color(230, 57, 70));
         tblProducts.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -82,6 +84,7 @@ public class ManageProductCatalogJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblProducts);
 
+        btnView.setForeground(new java.awt.Color(230, 57, 70));
         btnView.setText("View Details...");
         btnView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,6 +92,7 @@ public class ManageProductCatalogJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnCreate.setForeground(new java.awt.Color(230, 57, 70));
         btnCreate.setText("Add Product...");
         btnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,6 +100,7 @@ public class ManageProductCatalogJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnSearch.setForeground(new java.awt.Color(230, 57, 70));
         btnSearch.setText("Search");
         btnSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,6 +108,7 @@ public class ManageProductCatalogJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnDelete.setForeground(new java.awt.Color(230, 57, 70));
         btnDelete.setText("Delete");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

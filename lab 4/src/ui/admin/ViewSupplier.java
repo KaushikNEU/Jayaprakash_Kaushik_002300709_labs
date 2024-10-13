@@ -59,6 +59,7 @@ public class ViewSupplier extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         productCatalog = new javax.swing.JTable();
 
+        btnBack.setForeground(new java.awt.Color(230, 57, 70));
         btnBack.setText("<< Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,8 +67,10 @@ public class ViewSupplier extends javax.swing.JPanel {
             }
         });
 
+        lblSupplierName.setForeground(new java.awt.Color(230, 57, 70));
         lblSupplierName.setText("<Supplier Name>");
 
+        productCatalog.setForeground(new java.awt.Color(230, 57, 70));
         productCatalog.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},

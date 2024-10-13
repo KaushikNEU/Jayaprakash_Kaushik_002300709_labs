@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="46" green="39" red="e6" type="rgb"/>
+    </Property>
+  </Properties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -93,6 +98,9 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="lblLogo">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="46" green="39" red="e6" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Logo:"/>
       </Properties>
     </Component>
@@ -108,6 +116,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnAttach">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="46" green="39" red="e6" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Attach"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
@@ -117,6 +128,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblName">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="46" green="39" red="e6" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Name:"/>
       </Properties>
     </Component>
@@ -124,11 +138,17 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblTitle">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="46" green="39" red="e6" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="New Supplier Information:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="backButton">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="46" green="39" red="e6" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="&lt;&lt; Back"/>
       </Properties>
       <Events>
@@ -137,6 +157,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblDescription">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="46" green="39" red="e6" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Description:"/>
       </Properties>
     </Component>
@@ -158,6 +181,9 @@
     </Container>
     <Component class="javax.swing.JButton" name="btnSave">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="46" green="39" red="e6" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Save"/>
       </Properties>
       <Events>

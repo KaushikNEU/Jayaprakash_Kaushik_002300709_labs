@@ -47,11 +47,14 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
         Performance = new javax.swing.JButton();
         workArea = new javax.swing.JPanel();
 
+        setForeground(new java.awt.Color(230, 57, 70));
+
         splitPane.setDividerLocation(50);
         splitPane.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
         menuBar.setBackground(new java.awt.Color(255, 255, 255));
 
+        btnLogOut.setForeground(new java.awt.Color(230, 57, 70));
         btnLogOut.setText("Log Out");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,8 +62,10 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        lblWelcome.setForeground(new java.awt.Color(230, 57, 70));
         lblWelcome.setText("<WelcomeMsg>");
 
+        btnManageProductCatalog.setForeground(new java.awt.Color(230, 57, 70));
         btnManageProductCatalog.setText("Product Catalog");
         btnManageProductCatalog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,6 +73,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnSupplierProfile.setForeground(new java.awt.Color(230, 57, 70));
         btnSupplierProfile.setText("Update Profile");
         btnSupplierProfile.setEnabled(false);
         btnSupplierProfile.addActionListener(new java.awt.event.ActionListener() {
@@ -76,9 +82,11 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnManageStaff.setForeground(new java.awt.Color(230, 57, 70));
         btnManageStaff.setText("Manage Staff");
         btnManageStaff.setEnabled(false);
 
+        Performance.setForeground(new java.awt.Color(230, 57, 70));
         Performance.setText("Performance");
         Performance.setEnabled(false);
         Performance.addActionListener(new java.awt.event.ActionListener() {

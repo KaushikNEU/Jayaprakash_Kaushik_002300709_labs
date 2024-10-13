@@ -41,10 +41,17 @@ public class SearchForProductJPanel extends javax.swing.JPanel {
         searchButton = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
 
+        setForeground(new java.awt.Color(230, 57, 70));
+
+        lblTitle.setForeground(new java.awt.Color(230, 57, 70));
         lblTitle.setText("Search for Product");
 
+        lblProductId.setForeground(new java.awt.Color(230, 57, 70));
         lblProductId.setText("Product Id:");
 
+        idField.setForeground(new java.awt.Color(230, 57, 70));
+
+        searchButton.setForeground(new java.awt.Color(230, 57, 70));
         searchButton.setText("Search Now >>");
         searchButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -52,6 +59,7 @@ public class SearchForProductJPanel extends javax.swing.JPanel {
             }
         });
 
+        jButton1.setForeground(new java.awt.Color(230, 57, 70));
         jButton1.setText("<< Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -48,16 +48,22 @@ public class CreateNewProductJPanel extends javax.swing.JPanel {
         lblProductName = new javax.swing.JLabel();
         txtName = new javax.swing.JTextField();
 
+        setForeground(new java.awt.Color(230, 57, 70));
+
+        lblTitle.setForeground(new java.awt.Color(230, 57, 70));
         lblTitle.setText("Create New Product");
 
+        lblProductId.setForeground(new java.awt.Color(230, 57, 70));
         lblProductId.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblProductId.setText("Product ID:");
         lblProductId.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         txtId.setEditable(false);
 
+        lblPrice.setForeground(new java.awt.Color(230, 57, 70));
         lblPrice.setText("Product Price:");
 
+        btnAdd.setForeground(new java.awt.Color(230, 57, 70));
         btnAdd.setText("Add Product");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,6 +71,7 @@ public class CreateNewProductJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnBack.setForeground(new java.awt.Color(230, 57, 70));
         btnBack.setText("<< Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,6 +79,7 @@ public class CreateNewProductJPanel extends javax.swing.JPanel {
             }
         });
 
+        lblProductName.setForeground(new java.awt.Color(230, 57, 70));
         lblProductName.setText("Product Name:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
