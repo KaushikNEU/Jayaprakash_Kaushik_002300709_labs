@@ -37,18 +37,25 @@ public class SearchResultJPanel extends javax.swing.JPanel {
         lblProductId = new javax.swing.JLabel();
         btnSave = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(207, 92, 54));
         setPreferredSize(new java.awt.Dimension(650, 600));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblTitle.setText("View Product Detail");
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 25, -1, -1));
 
         lblProductName.setText("Product Name:");
+        add(lblProductName, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 116, -1, -1));
 
         txtName.setEditable(false);
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 116, 159, -1));
 
         lblPrice.setText("Product Price:");
+        add(lblPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 182, -1, -1));
 
         txtPrice.setEditable(false);
+        add(txtPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 182, 159, -1));
 
         btnUpdate.setText("Update Product");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
@@ -56,6 +63,7 @@ public class SearchResultJPanel extends javax.swing.JPanel {
                 btnUpdateActionPerformed(evt);
             }
         });
+        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 256, -1, 30));
 
         btnBack.setText("<< Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -63,10 +71,13 @@ public class SearchResultJPanel extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 27, -1, -1));
 
         txtId.setEditable(false);
+        add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 149, 159, -1));
 
         lblProductId.setText("Product ID:");
+        add(lblProductId, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 149, -1, -1));
 
         btnSave.setText("Save");
         btnSave.setEnabled(false);
@@ -75,62 +86,7 @@ public class SearchResultJPanel extends javax.swing.JPanel {
                 btnSaveActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(160, 160, 160)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblProductName, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblProductId, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblPrice, javax.swing.GroupLayout.Alignment.TRAILING)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(btnBack)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblTitle)
-                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnUpdate)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(169, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblTitle)
-                    .addComponent(btnBack))
-                .addGap(66, 66, 66)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblProductName)
-                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblProductId)
-                    .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblPrice)
-                    .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(51, 51, 51)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnUpdate)
-                    .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(322, 322, 322))
-        );
-
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnSave, btnUpdate});
-
+        add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(405, 256, 107, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed

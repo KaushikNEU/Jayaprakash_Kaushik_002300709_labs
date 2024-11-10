@@ -58,7 +58,7 @@ public class MainJFrame extends javax.swing.JFrame {
         splitPane.setDividerLocation(150);
         splitPane.setOpaque(false);
 
-        controlPanel.setBackground(new java.awt.Color(240, 240, 240));
+        controlPanel.setBackground(new java.awt.Color(207, 92, 54));
 
         btnAdmin.setText("Administrator");
         btnAdmin.addActionListener(new java.awt.event.ActionListener() {
@@ -110,7 +110,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         splitPane.setLeftComponent(controlPanel);
 
-        userProcessContainer.setBackground(new java.awt.Color(240, 240, 240));
+        userProcessContainer.setBackground(new java.awt.Color(207, 92, 54));
         userProcessContainer.setLayout(new java.awt.CardLayout());
         splitPane.setRightComponent(userProcessContainer);
 

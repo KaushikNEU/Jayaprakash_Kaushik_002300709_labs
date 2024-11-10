@@ -30,8 +30,9 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         btnManageSuppliers = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(240, 240, 240));
+        setBackground(new java.awt.Color(207, 92, 54));
         setPreferredSize(new java.awt.Dimension(650, 600));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnManageSuppliers.setText("Manage Suppliers >>");
         btnManageSuppliers.addActionListener(new java.awt.event.ActionListener() {
@@ -39,33 +40,12 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 btnManageSuppliersActionPerformed(evt);
             }
         });
+        add(btnManageSuppliers, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 108, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Administrator's Work Area");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 630, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnManageSuppliers)
-                .addGap(55, 55, 55))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel1)
-                .addGap(66, 66, 66)
-                .addComponent(btnManageSuppliers)
-                .addContainerGap())
-        );
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 20, 638, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnManageSuppliersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageSuppliersActionPerformed

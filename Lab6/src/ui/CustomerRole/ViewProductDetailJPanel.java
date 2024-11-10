@@ -54,16 +54,22 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         txtAvail = new javax.swing.JTextField();
 
+        setBackground(new java.awt.Color(207, 92, 54));
         setPreferredSize(new java.awt.Dimension(650, 600));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel1.setText("Product Details");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 25, 222, -1));
 
         jLabel2.setText("Product Name:");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(186, 135, -1, 30));
 
         txtProdName.setEditable(false);
+        add(txtProdName, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 139, 160, -1));
 
         jLabel3.setText("Price:");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 215, -1, 30));
 
         txtPrice.setEditable(false);
         txtPrice.addActionListener(new java.awt.event.ActionListener() {
@@ -71,6 +77,7 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
                 txtPriceActionPerformed(evt);
             }
         });
+        add(txtPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 219, 160, -1));
 
         backButton1.setText("<< Back");
         backButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -78,68 +85,19 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
                 backButton1ActionPerformed(evt);
             }
         });
+        add(backButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 27, -1, -1));
 
         txtId.setEditable(false);
+        add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 179, 160, -1));
 
         jLabel5.setText("Product ID:");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 175, -1, 30));
 
         jLabel6.setText("Availability:");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 260, -1, -1));
 
         txtAvail.setEditable(false);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(186, 186, 186)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(backButton1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtProdName, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtAvail, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(161, Short.MAX_VALUE))
-        );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {txtAvail, txtId, txtPrice, txtProdName});
-
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(backButton1)
-                    .addComponent(jLabel1))
-                .addGap(85, 85, 85)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtProdName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtAvail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
-                .addContainerGap())
-        );
+        add(txtAvail, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 257, 160, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButton1ActionPerformed

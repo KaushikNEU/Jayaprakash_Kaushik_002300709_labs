@@ -79,12 +79,12 @@ public class BrowseProductsJPanel extends javax.swing.JPanel {
         btnRemoveOrderItem = new javax.swing.JButton();
         btnCheckOut = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(240, 240, 240));
+        setBackground(new java.awt.Color(207, 92, 54));
         setPreferredSize(new java.awt.Dimension(650, 600));
 
         lblTitle.setBackground(new java.awt.Color(0, 0, 0));
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(204, 0, 0));
+        lblTitle.setForeground(new java.awt.Color(51, 0, 51));
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/logoPleaseBuySmall.png"))); // NOI18N
         lblTitle.setText("Have a wonderful shopping experience!");

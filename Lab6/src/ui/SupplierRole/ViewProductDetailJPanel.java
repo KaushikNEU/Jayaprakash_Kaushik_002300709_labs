@@ -38,18 +38,25 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
         lblProductId = new javax.swing.JLabel();
         btnSave = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(207, 92, 54));
         setPreferredSize(new java.awt.Dimension(650, 600));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblTitle.setText("View Product Details");
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(276, 25, -1, -1));
 
         lblProductName.setText("Product Name:");
+        add(lblProductName, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 131, -1, -1));
 
         txtName.setEditable(false);
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 128, 159, -1));
 
         lblProductPrice.setText("Product Price:");
+        add(lblProductPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 197, -1, -1));
 
         txtPrice.setEditable(false);
+        add(txtPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 194, 159, -1));
 
         btnUpdate.setText("Update Product");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
@@ -57,6 +64,7 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
                 btnUpdateActionPerformed(evt);
             }
         });
+        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 248, 159, -1));
 
         btnBack.setText("<< Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -64,10 +72,13 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 27, -1, -1));
 
         txtId.setEditable(false);
+        add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 161, 159, -1));
 
         lblProductId.setText("Product ID:");
+        add(lblProductId, new org.netbeans.lib.awtextra.AbsoluteConstraints(212, 164, -1, -1));
 
         btnSave.setText("Save");
         btnSave.setEnabled(false);
@@ -76,57 +87,7 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
                 btnSaveActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(190, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblProductId, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblProductName, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblProductPrice, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtName, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
-                    .addComponent(txtId, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
-                    .addComponent(txtPrice, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
-                    .addComponent(btnUpdate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnSave, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(196, 196, 196))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(btnBack)
-                .addGap(172, 172, 172)
-                .addComponent(lblTitle)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblTitle)
-                    .addComponent(btnBack))
-                .addGap(78, 78, 78)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblProductName)
-                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblProductId)
-                    .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblProductPrice)
-                    .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addComponent(btnUpdate)
-                .addGap(18, 18, 18)
-                .addComponent(btnSave)
-                .addContainerGap(288, Short.MAX_VALUE))
-        );
+        add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 289, 159, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed

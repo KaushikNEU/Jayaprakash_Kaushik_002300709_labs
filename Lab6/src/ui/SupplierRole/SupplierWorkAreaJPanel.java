@@ -27,14 +27,16 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
         btnUpdateProfile = new javax.swing.JButton();
         btnUpdateStaff = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(240, 240, 240));
+        setBackground(new java.awt.Color(207, 92, 54));
         setPreferredSize(new java.awt.Dimension(650, 600));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/logoPleaseBuySmall.png"))); // NOI18N
         lblTitle.setText("Supplier Work Area");
         lblTitle.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         lblTitle.setIconTextGap(100);
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 35, -1, -1));
 
         btnManageProductCatalog.setText("Manage Product Catalog >>");
         btnManageProductCatalog.addActionListener(new java.awt.event.ActionListener() {
@@ -42,6 +44,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
                 btnManageProductCatalogActionPerformed(evt);
             }
         });
+        add(btnManageProductCatalog, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 205, -1, -1));
 
         btnProductPerformance.setText("Review Product Performance >>");
         btnProductPerformance.setEnabled(false);
@@ -50,6 +53,7 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
                 btnProductPerformanceActionPerformed(evt);
             }
         });
+        add(btnProductPerformance, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 234, -1, -1));
 
         btnUpdateProfile.setText("Update Personal Profile >>");
         btnUpdateProfile.setEnabled(false);
@@ -58,40 +62,11 @@ public class SupplierWorkAreaJPanel extends javax.swing.JPanel {
                 btnUpdateProfileActionPerformed(evt);
             }
         });
+        add(btnUpdateProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 263, -1, -1));
 
         btnUpdateStaff.setText("Manage Staff");
         btnUpdateStaff.setEnabled(false);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(230, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(btnProductPerformance)
-                        .addComponent(btnUpdateProfile)
-                        .addComponent(btnUpdateStaff)
-                        .addComponent(btnManageProductCatalog))
-                    .addComponent(lblTitle))
-                .addGap(55, 55, 55))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(lblTitle)
-                .addGap(98, 98, 98)
-                .addComponent(btnManageProductCatalog)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnProductPerformance)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnUpdateProfile)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnUpdateStaff)
-                .addContainerGap(261, Short.MAX_VALUE))
-        );
+        add(btnUpdateStaff, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 292, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
     private void btnManageProductCatalogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageProductCatalogActionPerformed
 

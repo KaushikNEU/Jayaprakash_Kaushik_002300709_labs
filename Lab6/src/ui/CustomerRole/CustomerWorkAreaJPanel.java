@@ -49,7 +49,8 @@ public class CustomerWorkAreaJPanel extends javax.swing.JPanel {
         lblTitle = new javax.swing.JLabel();
         btnBrowseCatalog = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(240, 240, 240));
+        setBackground(new java.awt.Color(207, 92, 54));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTitle.setBackground(new java.awt.Color(0, 0, 0));
         lblTitle.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
@@ -57,6 +58,7 @@ public class CustomerWorkAreaJPanel extends javax.swing.JPanel {
         lblTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/logoPleaseBuySmall.png"))); // NOI18N
         lblTitle.setText("Welcome Dear Customer!");
         lblTitle.setIconTextGap(20);
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 19, -1, -1));
 
         btnBrowseCatalog.setText("Browse Product Catalog >>");
         btnBrowseCatalog.addActionListener(new java.awt.event.ActionListener() {
@@ -64,29 +66,7 @@ public class CustomerWorkAreaJPanel extends javax.swing.JPanel {
                 btnBrowseCatalogActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(lblTitle)
-                .addContainerGap(195, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnBrowseCatalog)
-                .addGap(56, 56, 56))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(lblTitle)
-                .addGap(81, 81, 81)
-                .addComponent(btnBrowseCatalog)
-                .addContainerGap(399, Short.MAX_VALUE))
-        );
+        add(btnBrowseCatalog, new org.netbeans.lib.awtextra.AbsoluteConstraints(403, 172, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
     private void btnBrowseCatalogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBrowseCatalogActionPerformed
         // TODO add your handling code here:

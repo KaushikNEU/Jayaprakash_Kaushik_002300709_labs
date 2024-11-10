@@ -46,7 +46,8 @@ public class ManageSuppliersJPanel extends javax.swing.JPanel {
         btnAddSupplier = new javax.swing.JButton();
         lblTitle = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(240, 240, 240));
+        setBackground(new java.awt.Color(207, 92, 54));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         supplierTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -73,12 +74,15 @@ public class ManageSuppliersJPanel extends javax.swing.JPanel {
             supplierTable.getColumnModel().getColumn(1).setMaxWidth(200);
         }
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 81, 589, 168));
+
         btnBack.setText("<< Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
+        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 23, -1, -1));
 
         btnRemove.setText("Delete");
         btnRemove.addActionListener(new java.awt.event.ActionListener() {
@@ -86,6 +90,7 @@ public class ManageSuppliersJPanel extends javax.swing.JPanel {
                 btnRemoveActionPerformed(evt);
             }
         });
+        add(btnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 255, 114, -1));
 
         btnView.setText("View Products");
         btnView.addActionListener(new java.awt.event.ActionListener() {
@@ -93,6 +98,7 @@ public class ManageSuppliersJPanel extends javax.swing.JPanel {
                 btnViewActionPerformed(evt);
             }
         });
+        add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 255, -1, -1));
 
         btnAddSupplier.setText("New..");
         btnAddSupplier.addActionListener(new java.awt.event.ActionListener() {
@@ -100,50 +106,12 @@ public class ManageSuppliersJPanel extends javax.swing.JPanel {
                 btnAddSupplierActionPerformed(evt);
             }
         });
+        add(btnAddSupplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 255, 114, -1));
 
         lblTitle.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("Manage Suppliers");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(25, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnAddSupplier, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnView)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnRemove))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 589, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnBack)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(36, 36, 36))
-        );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnAddSupplier, btnRemove, btnView});
-
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBack)
-                    .addComponent(lblTitle))
-                .addGap(35, 35, 35)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnView)
-                    .addComponent(btnAddSupplier)
-                    .addComponent(btnRemove))
-                .addContainerGap(321, Short.MAX_VALUE))
-        );
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 21, 385, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddSupplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddSupplierActionPerformed
