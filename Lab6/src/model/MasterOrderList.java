@@ -12,12 +12,11 @@ import java.util.ArrayList;
  */
 public class MasterOrderList {
     
-    ArrayList<Order> orderList;
-    private final ArrayList<Order> orderlist;
-
-    public MasterOrderList() {
+        ArrayList<Order> orderList;
+    
+    public MasterOrderList(){
+        orderList = new ArrayList<Order>();
         
-    orderlist = new ArrayList<Order>();
     }
 
     public ArrayList<Order> getOrderList() {
@@ -27,10 +26,13 @@ public class MasterOrderList {
     public void setOrderList(ArrayList<Order> orderList) {
         this.orderList = orderList;
     }
-
-    public void addNewOrder(Order currentOrder) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
+    
+    public void addNewOrder(Order order){
+        this.orderList.add(order);
     }
+
+    
     
     
 }

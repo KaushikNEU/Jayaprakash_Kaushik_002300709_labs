@@ -11,6 +11,7 @@ package model;
  */
 public class Product {
 
+
     private String prodName;
     private double price;
     private int modelNumber;
@@ -43,15 +44,6 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
-    
-
-    public int getModelNumber() {
-        return modelNumber;
-    }
-
-    public void setModelNumber(int modelNumber) {
-        this.modelNumber = modelNumber;
-    }
 
     public int getAvail() {
         return avail;
@@ -61,6 +53,22 @@ public class Product {
         this.avail = avail;
     }
 
-    
+    public static int getCount() {
+        return count;
+    }
+
+    public static void setCount(int count) {
+        Product.count = count;
+    }
+
+
+
+    public int getModelNumber() {
+        return modelNumber;
+    }
+
+    public void setModelNumber(int modelNumber) {
+        this.modelNumber = modelNumber;
+    }
 
 }

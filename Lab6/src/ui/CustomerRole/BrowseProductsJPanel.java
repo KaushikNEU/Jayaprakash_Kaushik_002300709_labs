@@ -396,23 +396,21 @@ public class BrowseProductsJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_btnSearchProductActionPerformed
 
     private void btnRemoveOrderItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveOrderItemActionPerformed
+
         int selectedRowIndex = tblCart.getSelectedRow();
-        if (selectedRowIndex < 0){
+        if(selectedRowIndex < 0){
             JOptionPane.showMessageDialog(this, "Please Select the order Item First.");
             return;
-            
         }
         OrderItem item = (OrderItem) tblCart.getValueAt(selectedRowIndex, 0);
         int quant = 0;
         
-
-                
-                item.getProduct().setAvail(item.getProduct().getAvail()+item.getQuantity());
-                item.setQuantity(quant);  
-                currentOrder.deleteItem(item);
-                
-                populateCartTable();
-                populateProductTable();
+        item.getProduct().setAvail(item.getProduct().getAvail()+item.getQuantity());
+        item.setQuantity(quant);
+        currentOrder.deleteItem(item);
+        
+        populateCartTable();
+        populateProductTable();
         
     }//GEN-LAST:event_btnRemoveOrderItemActionPerformed
 
@@ -434,10 +432,11 @@ public class BrowseProductsJPanel extends javax.swing.JPanel {
     private void btnAddToCartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddToCartActionPerformed
         // TODO add your handling code here:
         
-        int selectedRowIndex = tblProductCatalog.getSelectedRow();
-        if(selectedRowIndex < 0){
-            JOptionPane.showMessageDialog(this, "Please select the product first");
+     int selectedRowIndex = tblProductCatalog.getSelectedRow();
+        if (selectedRowIndex < 0){
+            JOptionPane.showMessageDialog(this, "Please Select the Product First.");
             return;
+            
         }
         
         Product product = (Product) tblProductCatalog.getValueAt(selectedRowIndex, 0);
@@ -445,36 +444,41 @@ public class BrowseProductsJPanel extends javax.swing.JPanel {
         int quant = 0;
         
         try{
+            
             salesPrice = Double.parseDouble(txtSalesPrice.getText());
-            quant = (Integer) spnQuantity.getValue();   
+            quant = (Integer)spnQuantity.getValue();            
             
         }catch(Exception e){
-            JOptionPane.showMessageDialog(this, "Please check the price and quantity fields");
-            return;
+                    JOptionPane.showMessageDialog(this, "Please Check Price and Quantity Fields.");
+                    return;
         }
         
-        if (salesPrice < product.getPrice()){
-            JOptionPane.showMessageDialog(this, "Price should be more than it is set in the price.");
-            return;
+        if (salesPrice > product.getPrice()){
+            
+
+        }
+        else{
+                    JOptionPane.showMessageDialog(this, "Price should be more than it is set in the price.");
+                    return;
+            
         }
         
         OrderItem item = currentOrder.findProduct(product);
         
-        if(item == null) {
-            if(product.getAvail()>= quant){
-                
+        if (item == null){
+            
+            if(product.getAvail() >= quant){
                 currentOrder.addNewOrderItem(product, salesPrice, quant);
                 product.setAvail(product.getAvail() - quant);
                 
-                
-                
             }else{
-                JOptionPane.showMessageDialog(this, "Please check product availability");
-                return;
-            }
+                    JOptionPane.showMessageDialog(this, "Please check product availability.");
+                    return;
         }
-        else{
-            int oldQuant = item.getQuantity();
+        
+            
+        }else{
+                int oldQuant = item.getQuantity();
                 if (item.getProduct().getAvail() + oldQuant < quant){
                     JOptionPane.showMessageDialog(this, "Please check product availability.");
                     return;                    
@@ -482,8 +486,11 @@ public class BrowseProductsJPanel extends javax.swing.JPanel {
                 
                 item.getProduct().setAvail(item.getProduct().getAvail()+oldQuant-quant);
                 item.setQuantity(quant);
-            
-        }
+                    
+                    
+                    
+                   
+                }
         populateProductTable();
         populateCartTable();
         

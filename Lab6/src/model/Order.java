@@ -13,8 +13,8 @@ import java.util.ArrayList;
 public class Order {
     
     ArrayList<OrderItem> orderItemList;
-
-    public Order() {
+    
+    public Order(){
         this.orderItemList = new ArrayList<OrderItem>();
     }
 
@@ -25,23 +25,29 @@ public class Order {
     public void setOrderItemList(ArrayList<OrderItem> orderItemList) {
         this.orderItemList = orderItemList;
     }
-    
     public void addNewOrderItem(Product product, double price, int quantity){
-        OrderItem orderItem = new OrderItem(product, price, quantity);
+        OrderItem orderItem = new OrderItem(product,price,quantity);
         orderItemList.add(orderItem);
+        
+           
+        
     }
+    public void deleteItem(OrderItem item){
+        this.orderItemList.remove(item);
+            
+        
+           
+        
+    }    
     
-    public OrderItem findProduct(Product product){
+    
+    
+    public OrderItem findProduct (Product product){
         for(OrderItem oi : this.getOrderItemList()){
             if(oi.getProduct().equals(product)){
-                return oi;
-            }
+            return oi;
         }
-        return null;
     }
-
-    public void deleteItem(OrderItem item) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    return null;
     }
-    
-}
+}     
