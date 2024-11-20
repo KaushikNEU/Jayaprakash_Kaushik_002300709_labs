@@ -34,7 +34,7 @@ public class AnalysisHelper {
 
     }
 
-    public void getMaxLikeCommentPost() {
+    public void getMaxLikeCommentPost() { // We get the maximum likes each comment has got per post
         DataStore data = DataStore.getInstance();
         Comment commentWithMaxLikes = null;
 
@@ -53,7 +53,7 @@ public class AnalysisHelper {
 
     }
 
-    public void getPostWithMostComments() {
+    public void getPostWithMostComments() { // Method which checks the post which has more number of comments
         DataStore data = DataStore.getInstance();
         Post postWithMostComments = null;
         for (Post p : data.getPosts().values()) {
@@ -70,7 +70,7 @@ public class AnalysisHelper {
 
     }
 
-    public void getPassiveUsers() {
+    public void getPassiveUsers() { // Method which checks the top 5 inactive users using the number of posts each person has posted
         DataStore data = DataStore.getInstance();
 
         HashMap<Integer, Integer> postNumbers = new HashMap<Integer, Integer>();
@@ -96,7 +96,7 @@ public class AnalysisHelper {
 
     }
 
-    public void getPassiveCommentUsers() {
+    public void getPassiveCommentUsers() { // Method which checks users with least number of comments depending on the userId
         DataStore data = DataStore.getInstance();
 
         HashMap<Integer, Integer> commentNumbers = new HashMap<Integer, Integer>();
@@ -121,7 +121,7 @@ public class AnalysisHelper {
         }
     }
 
-    public void getPassiveAndActiveOverallUsers() {
+    public void getPassiveAndActiveOverallUsers() { //Method which the number of people who are active and passive by using the userId
         DataStore data = DataStore.getInstance();
         HashMap<Integer, Integer> overallNumbers = new HashMap<Integer, Integer>();
 
