@@ -12,7 +12,7 @@ import model.User;
  *
  * @author kaushikj
  */
-public class UserMapComparator implements Comparator<User> {
+public class UserMapComparator implements Comparator<User> { // We use this comparator to find store the values in a HashMap and compare them according to the number of users
 
     HashMap<Integer, Integer> userPostMap;
 

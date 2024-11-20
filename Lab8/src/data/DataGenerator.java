@@ -12,9 +12,9 @@ import java.util.Random;
 
 /**
  *
- * @author harshalneelkamal
+ * @author kaushikj
  */
-public class DataGenerator {
+public class DataGenerator { //Use this class to populate the model by using different attributes
         
     private static DataGenerator instance;
     
@@ -36,7 +36,7 @@ public class DataGenerator {
     private final String USER_CAT_PATH = "./UserCatalogue.csv";
     private final String COMMENT_FILE_PATH = "./CommentData.csv";
     
-    private DataGenerator() throws IOException {
+    private DataGenerator() throws IOException { // To make the model more sustainable we set the values to a limited number
                 
         rand = new Random();
         
@@ -51,7 +51,7 @@ public class DataGenerator {
         
     }
     
-    public static DataGenerator getInstance() throws IOException{
+    public static DataGenerator getInstance() throws IOException{ // This method is used to create an instance of the object
         if(instance == null)
         {
             instance = new DataGenerator();
@@ -60,7 +60,7 @@ public class DataGenerator {
     }
     
     
-    private void generateCommentFile() throws IOException{
+    private void generateCommentFile() throws IOException{ // This method creates a comment file which has a list of comments in the model
         //generate Order file
         try {
             file = new File(COMMENT_FILE_PATH);
@@ -91,7 +91,7 @@ public class DataGenerator {
     }
     
   
-    private void generateCommentColumns() throws IOException{
+    private void generateCommentColumns() throws IOException{ // This method is used to store the comments as columns with every new comment
         int postId = 0;
         int postingUserId = rand.nextInt(userIdsRange);
         int commentId = 0;
@@ -118,7 +118,7 @@ public class DataGenerator {
         }
         
     }
-    private void generateUserFile() throws IOException{
+    private void generateUserFile() throws IOException{ // This method creates users in the model 
         //generate Product file
         
         try {
@@ -150,7 +150,7 @@ public class DataGenerator {
         
     }
     
-    private void generateUserColumns() throws IOException{
+    private void generateUserColumns() throws IOException{ // This method stores the users as a column with increasing number of users 
         int userId = 0;
         //the loop for orders
         while(userId < userIdsRange){

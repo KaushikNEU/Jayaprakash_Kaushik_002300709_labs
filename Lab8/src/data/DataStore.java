@@ -13,9 +13,9 @@ import model.User;
 
 /**
  *
- * @author harshalneelkamal
+ * @author kaushikj
  */
-public class DataStore {
+public class DataStore { // We declare the attributes and provide them with getters and setters
     
     private static DataStore dataStore;
     
